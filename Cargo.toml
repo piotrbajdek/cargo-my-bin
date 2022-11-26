@@ -1,13 +1,13 @@
 [package]
 name = "cargo-my-bin"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Piotr Bajdek <piotr.bajdek@proton.me>"]
 edition = "2021"
-description = "list installed crates: a cargo subcommand to display the content of .cargo/bin/"
+description = "list installed crates: a cargo subcommand to display the contents of .cargo/bin/"
 readme = "README.md"
 repository = "https://github.com/piotrbajdek/cargo-my-bin"
 license = "UPL-1.0"
-keywords = ["binaries", "cargo", "crates", "packages", "rust"]
+keywords = ["cargo", "cargo-subcommand", "crates", "plugins", "rust"]
 categories = ["command-line-utilities", "development-tools::cargo-plugins"]
 
 [dependencies]

@@ -45,9 +45,9 @@ use std::fs;
 
 fn main() {
     let reset = "\x1b[0m";
-    let red = "\x1b[31m";
-    let green = "\x1b[32m";
     let grey = "\x1b[38;5;240m";
+    let green = "\x1b[38;5;106m";
+    let magenta = "\x1b[38;5;126m";
 
     let get_home = dirs::home_dir();
     let binding = get_home.unwrap();
@@ -67,7 +67,7 @@ fn main() {
             println!("{}", file.unwrap().path().display());
             print!("{}", reset);
         } else if fl_nm.starts_with("cargo-") {
-            print!("{}", red);
+            print!("{}", magenta);
             println!("{}", file.unwrap().path().display());
             print!("{}", reset);
         } else {
