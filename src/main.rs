@@ -1,6 +1,6 @@
 /*
 
-Copyright © 2022 Piotr Bajdek
+Copyright © 2022–2023 Piotr Bajdek
 
 The Universal Permissive License (UPL), Version 1.0
 

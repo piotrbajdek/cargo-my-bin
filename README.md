@@ -1,8 +1,8 @@
 ## CARGO-MY-BIN
 
-[cargo-my-bin](https://github.com/piotrbajdek/cargo-my-bin) is a plugin for Cargo displaying the contents of `.cargo/bin/`.
+[cargo-my-bin](https://github.com/piotrbajdek/cargo-my-bin) is a plugin for Cargo displaying the contents of `~/.cargo/bin/`.
 
-cargo-my-bin works on Linux and other Unix-like operating systems.
+cargo-my-bin works on Linux and other Unix-like operating systems only.
 
 ## INSTALLATION
 
