@@ -55,11 +55,10 @@ fn main() {
     let reset = "\x1b[0m";
     let red = "\x1b[31m";
     let blue_underlined = "\x1b[34;4m";
-    let cyan = "\x1b[36m";
     let grey = "\x1b[38;5;240m";
-    let yellow = "\x1b[93m";
+    let violet = "\x1b[38;5;133m";
+    let yellow = "\x1b[38;5;220m";
     let green = "\x1b[38;5;106m";
-    let magenta = "\x1b[38;5;126m";
 
     let get_home = dirs::home_dir();
     let binding = get_home.unwrap();
@@ -84,7 +83,7 @@ fn main() {
                 println!("{}", file.unwrap().path().display());
                 print!("{reset}");
             } else if fl_nm.starts_with("cargo-") {
-                print!("{magenta}");
+                print!("{violet}");
                 println!("{}", file.unwrap().path().display());
                 print!("{reset}");
             } else {
@@ -99,7 +98,7 @@ fn main() {
     let argument = args.get(2).unwrap();
 
     if argument == "--help" {
-        info::help(reset, blue_underlined, cyan, grey, yellow);
+        info::help(reset, blue_underlined, grey, violet, yellow);
         exit(0);
     } else if argument == "--license" {
         info::license(reset, yellow);
@@ -129,7 +128,7 @@ fn main() {
             let fl_nm: &str = fl_name.unwrap().trim();
 
             if fl_nm.starts_with("cargo-") {
-                print!("{magenta}");
+                print!("{violet}");
                 println!("{}", file.unwrap().path().display());
                 print!("{reset}");
             }

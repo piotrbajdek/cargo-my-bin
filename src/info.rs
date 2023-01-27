@@ -1,24 +1,24 @@
 #![warn(clippy::nursery, clippy::pedantic)]
 
-pub fn help(reset: &str, blue_underlined: &str, cyan: &str, grey: &str, yellow: &str) {
+pub fn help(reset: &str, blue_underlined: &str, grey: &str, violet: &str, yellow: &str) {
     println!("The plugin cargo-my-bin displays the contents of {}", blue_underlined.to_owned() + "~/.cargo/bin/" + reset + ".");
     println!();
     println!("{}", grey.to_owned() + "Usage" + reset + ":     " + yellow + "cargo my-bin [empty / options]" + reset);
     println!();
-    println!("{}", grey.to_owned() + "Options" + reset + ":   " + cyan + "--default" + reset + "       Display crates installed by default" + cyan);
+    println!("{}", grey.to_owned() + "Options" + reset + ":   " + violet + "--default" + reset + "       Display crates installed by default" + violet);
     println!("           --plugins{}", reset.to_owned() + "       Display installed Cargo plugins only");
     println!();
     println!("{}", grey.to_owned() + "Examples" + reset + ":  " + yellow + "cargo my-bin" + reset + "    [display all files in " + blue_underlined + "~/.cargo/bin/" + reset + "]" + yellow);
     println!("           cargo my-bin --plugins{}", reset.to_owned() + "  [only display Cargo plugins]");
     println!();
-    println!("{}", grey.to_owned() + "See also" + reset + ":  " + cyan + "--help" + reset + "          Show this help");
-    println!("           {}", cyan.to_owned() + "--license" + reset + "       Show licensing information");
-    println!("           {}", cyan.to_owned() + "--version" + reset + "       Show the program version");
+    println!("{}", grey.to_owned() + "See also" + reset + ":  " + violet + "--help" + reset + "          Show this help");
+    println!("           {}", violet.to_owned() + "--license" + reset + "       Show licensing information");
+    println!("           {}", violet.to_owned() + "--version" + reset + "       Show the program version");
 }
 
 pub fn version(reset: &str, grey: &str, yellow: &str) {
-    println!("{}", grey.to_owned() + "Version" + reset + ": " + yellow + "0.2.0" + reset);
-    println!("January 22, 2023");
+    println!("{}", grey.to_owned() + "Version" + reset + ": " + yellow + "0.2.1" + reset);
+    println!("January 27, 2023");
 }
 
 pub fn license(reset: &str, yellow: &str) {

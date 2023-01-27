@@ -1,6 +1,6 @@
 [package]
 name = "cargo-my-bin"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Piotr Bajdek <piotr.bajdek@proton.me>"]
 edition = "2021"
 description = "a cargo subcommand displaying the contents of ~/.cargo/bin/"
